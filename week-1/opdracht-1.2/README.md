@@ -28,7 +28,7 @@ I made use of the following API for this project:
 
 * [OBA API](https://zoeken.oba.nl/api/v1/)
 
-## Performance Matters 🏃🏻
+## Browser Technologies 🏃🏻
 
 ### Features
 This is a list of all the features I have tested:
