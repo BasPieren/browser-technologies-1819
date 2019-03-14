@@ -39,10 +39,10 @@ function homePage() {
 
 function choosePage() {
   const domElement = helper.domElements(),
-        categories = [{icon:'src/images/language.svg', text: 'Ik heb hulp nodig met de Nederlandse taal.', src:'#taal'},
-                      {icon:'src/images/computer.svg', text: 'Ik heb hulp nodig met mijn computer, smartphone of tablet.', src:'#computer'},
-                      {icon:'src/images/math.svg', text: 'Ik heb hulp nodig met mijn financiën.', src:'#financien'},
-                      {icon:'src/images/integration.svg', text: 'Ik heb hulp nodig met mijn inburgeringsexamen of staatsexamen.', src:'#inburgering'}]
+        categories = [{src:'src/images/language.svg', alt: 'Icoon van een boek', text: 'Ik heb hulp nodig met de Nederlandse taal.', href:'#taal'},
+                      {src:'src/images/computer.svg', alt: 'Icoon van een computer', text: 'Ik heb hulp nodig met mijn computer, smartphone of tablet.', href:'#computer'},
+                      {src:'src/images/math.svg', alt: 'Icoon van een rekenmachine', text: 'Ik heb hulp nodig met mijn financiën.', href:'#financien'},
+                      {src:'src/images/integration.svg', alt: 'Icoon van een groep mensen', text: 'Ik heb hulp nodig met mijn inburgeringsexamen of staatsexamen.', href:'#inburgering'}]
 
   helper.removeMain()
 
@@ -60,9 +60,10 @@ function choosePage() {
 
     domElement.h3.textContent = categorie.text
     domElement.a.textContent = 'kies'
-    domElement.a.href = categorie.src
+    domElement.a.href = categorie.href
     domElement.a.className = 'oba-main-button'
-    domElement.img.src = categorie.icon
+    domElement.img.src = categorie.src
+    domElement.img.alt = categorie.alt
     domElement.img.className = 'oba-categorie-icon'
 
     domElement.mainS.appendChild(domElement.article)
@@ -209,6 +210,7 @@ function agendaPage() {
     domElement.a.href = '#agenda-detail'
     domElement.a.className = 'oba-main-button'
     domElement.img.src = book.cover_image
+    domElement.img.alt = ''
 
     domElement.mainS.appendChild(domElement.article)
     domElement.article.appendChild(domElement.img)
