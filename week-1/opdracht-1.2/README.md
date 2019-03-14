@@ -1,37 +1,7 @@
-# Browser Technologies @cmda-minor-web 1819 ⚙️
-
-This is my repo for project 1 of the web development minor, Browser Technologies Edition!
-
-![Project 1 screenshot](https://i.imgur.com/xbocDDu.png)
-
-## Table of Contents 🗃
-* [To Do](#to-do-)
-* [Description](#description-)
-* [Installing](#installing-)
-  * [Packages and Technologies](#packages-and-technologies)
-* [API](#api-)
-* [Browser Technologies](#browser-technologies-)
-* [Sources](#sources-)
-  * [Honourable Mentions](#honourable-mentions)
-* [Licence](#licence-)
-
-## Description 📝
-The purpose of this course is to learn how to test a website on critical features that aren't always as obvious as they may seem and how to apply 'Progressive Enhancement'.
-
-### Packages and Technologies
-This project makes use of the following packages and technologies:
-
-* [OBA-wrapper by @maanlamp](https://github.com/maanlamp/OBA-wrapper)
-
-## API 🐒
-I made use of the following API for this project:
-
-* [OBA API](https://zoeken.oba.nl/api/v1/)
-
-## Browser Technologies 🏃🏻
+# Opdracht 1.2 🏃🏻
 Here I explain the all the tested features and what I did or would do to fix it.
 
-### Features
+## Features
 This is a list of all the features I have tested:
 
 1. __Turn off images__
@@ -51,19 +21,19 @@ This is a list of all the features I have tested:
 8. __Turn off localStorage__
   - When localStorage is disabled the recommended books and agenda items are not shown.
 
-### Device Lab & Screenreader Test
+## Device Lab & Screenreader Test
+Here I describe the results from the device lab and screenreader tests.
 
+### Device Lab
+-
 
-### Problems
+### Screenreader
+To test the screenreader I used the ChromeVox extension for Goolge Chrome. I started tabbing through the web app And it worked ok. When ever I tab trough the web app the focus switches between the different `<a>` tags on the page and the screenreader reads the text inside each button. The problem is that the user is missing the context of what the button does.
+
+## Problems
 This is a list of problems I want to do in fix:
 
-- [X] Images not having alt texts.
+- [x] Add alt text to all images.
 - [ ] Make the web app usable without mouse or trackpad.
-- [ ]
-
-## Sources 📚
-
-### Honourable Mentions
-
-## Licence 🔓
-MIT © [Bas Pieren](https://github.com/BasPieren)
+- [ ] Make the web app usable without `localStorage`
+  * To make the web app usable without `localStorage` the web app needs to be able to make an new API request when there is no `localStorage`.
