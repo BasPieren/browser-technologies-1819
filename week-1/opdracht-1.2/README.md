@@ -29,6 +29,7 @@ I made use of the following API for this project:
 * [OBA API](https://zoeken.oba.nl/api/v1/)
 
 ## Browser Technologies 🏃🏻
+Here I explain the all the tested features and what I did or would do to fix it.
 
 ### Features
 This is a list of all the features I have tested:
@@ -54,9 +55,11 @@ This is a list of all the features I have tested:
 
 
 ### Problems
-This is a list of things I want to do in this project:
+This is a list of problems I want to do in fix:
 
-- [ ] .
+- [X] Images not having alt texts.
+- [ ] Make the web app usable without mouse or trackpad.
+- [ ]
 
 ## Sources 📚
 
