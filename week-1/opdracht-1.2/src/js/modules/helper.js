@@ -50,6 +50,7 @@ function renderCourses(main, courses) {
     a.href = course.href
     a.className = 'oba-main-button'
     img.src = course.src
+    img.alt = ''
 
 
     main.appendChild(article)
