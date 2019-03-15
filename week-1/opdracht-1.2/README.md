@@ -30,10 +30,12 @@ Here I describe the results from the device lab and screenreader tests.
 ### Screenreader
 To test the screenreader I used the ChromeVox extension for Goolge Chrome. I started tabbing through the web app And it worked ok. When ever I tab trough the web app the focus switches between the different `<a>` tags on the page and the screenreader reads the text inside each button. The problem is that the user is missing the context of what the button does.
 
+I also tested VoiceOver, the IOS build in screenreader which allows the user to navigate trough a web page using their keyboard and which reads all the elements which the users selects. This is way more specific and allows the user to select all elements on the page including text elements. The screenreader reads out what the user is selecting and what is inside that element. The only thing that is missing is that the screenreader doesn't read out attributes like the header and article. This can make it confusing for the user when they are navigating because they don't know when they are on a new element like for example an article.
+
 ## Problems
 This is a list of problems I want to do in fix:
 
 - [x] Add alt text to all images.
-- [ ] Make the web app usable without mouse or trackpad.
+- [X] Make the web app usable without mouse or trackpad.
 - [ ] Make the web app usable without `localStorage`
   * To make the web app usable without `localStorage` the web app needs to be able to make an new API request when there is no `localStorage`.
