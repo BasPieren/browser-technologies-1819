@@ -25,7 +25,7 @@ This is a list of all the features I have tested:
 Here I describe the results from the device lab and screenreader tests.
 
 ### Device Lab
--
+When tested on multiple devices of different sizes my web app just breaks because it is not responsive. Text is still readable but allot of elements are out of position or scale into a weird size.
 
 ### Screenreader
 To test the screenreader I used the ChromeVox extension for Goolge Chrome. I started tabbing through the web app And it worked ok. When ever I tab trough the web app the focus switches between the different `<a>` tags on the page and the screenreader reads the text inside each button. The problem is that the user is missing the context of what the button does.
