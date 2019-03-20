@@ -1,0 +1,85 @@
+/* ---------- GENERAL ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, label {
+  font-family: system-ui, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+main > header {
+  margin: 0 0 auto 0;
+  text-align: center;
+}
+
+main > svg {
+  margin: 0 auto;
+  max-height: 40%;
+  width: auto;
+}
+
+main > form {
+  margin: auto 0;
+}
+
+main > footer {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 0 0 0;
+  text-align: center;
+}
+
+/* ---------- COLOR ---------- */
+
+#ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
+  fill: white;
+  transition: 0.5s;
+}
+
+main > div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto 0;
+}
+
+#rood:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
+  fill: red;
+}
+
+#blauw:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
+  fill: blue;
+}
+
+#geel:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
+  fill: yellow;
+}
+
+#groen:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
+  fill: green;
+}
+
+#paars:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
+  fill: purple;
+}
+
+#oranje:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
+  fill: orange;
+}
+
+#zwart:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
+  fill: black;
+}
+
+#wit:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
+  fill: white;
+}
