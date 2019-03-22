@@ -1,4 +1,4 @@
-# Browser Technologies @cmda-minor-web 1819 • Assignment 2 ⚙️
+# Assignment 2 ⚙️
 
 This is the repo for the Browser Technologies course, assignment 2.
 
