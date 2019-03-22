@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900');
+
+/* ---------- GENERAL ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, label {
+  font-family: 'Source Code Pro', monospace;
+  color: #2d2d2d
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h2 > span {
+  color: #1bc712;
+}
+
+a {
+  margin: 0 auto;
+  padding: 0.5em 2em;
+  font-size: 1.2em;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #1bc712;
+  border-radius: 1em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 1em;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+main > header {
+  margin: 0 0 auto 0;
+  text-align: center;
+}
+
+main > header > p{
+  margin: 1em 0 0 0;
+}
+
+main > svg {
+  margin: 0 auto;
+  max-height: 40%;
+  width: auto;
+}
+
+main > form {
+  margin: auto 0 0 0;
+}
+
+main > footer {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 0 0 0;
+  text-align: center;
+}
+
+#ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
+  fill: white;
+  border: #2d2d2d;
+  transition: 0.5s;
+}
+
+/* ---------- COLOR ---------- */
+
+main > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto 0 0 0;
+}
+
+label {
+  width: 25px;
+  height: 25px;
+  background-color: magenta;
+  cursor: pointer;
+}
+
+#rood:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
+  fill: red;
+}
+
+#blauw:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
+  fill: blue;
+}
+
+#geel:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
+  fill: yellow;
+}
+
+#groen:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
+  fill: green;
+}
+
+#paars:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
+  fill: purple;
+}
+
+#oranje:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
+  fill: orange;
+}
+
+#zwart:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
+  fill: black;
+}
+
+#wit:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
+  fill: white;
+}
+
+/* ---------- TEXT ---------- */
+
+input[type='text'] {
+  display: block;
+  margin: 0 auto;
+  padding-left: 1em;
+  width: 100%;
+  height: 50px;
+  font-size: 1em;
+  border: 1px solid #ededed;
+  box-sizing: border-box;
+}
+
+input[type='text']:focus {
+  outline: none;
+}
