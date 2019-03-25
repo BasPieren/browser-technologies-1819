@@ -17,8 +17,9 @@ app
 
   .get('/', homePage)
   .get('/color', colorPage)
-  .get('/print', printPage)
+  .get('/text', textPage)
 
+  .post('/print', printPage)
   .post('/text', textPage)
 
   .listen(port, () => console.log(`Example app listening on port ${port}!`))
@@ -38,5 +39,7 @@ function textPage(req, res) {
 }
 
 function printPage(req, res) {
-  res.render('pages/print.ejs')
+  const text = req.body.text;
+
+  res.render('pages/print.ejs', {text: text})
 }
