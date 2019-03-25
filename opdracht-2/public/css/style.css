@@ -41,21 +41,17 @@ main {
   box-sizing: border-box;
 }
 
-main > header {
+header {
   margin: 0 0 auto 0;
   padding: 2em 1em 0 1em;
   text-align: center;
 }
 
-main > header > p {
+header > p {
   margin: 1em 0 0 0;
 }
 
-main > form {
-  padding: 0 1em;
-}
-
-main > footer {
+footer {
   display: flex;
   justify-content: space-between;
   margin: auto 0 0 0;
@@ -63,11 +59,52 @@ main > footer {
   text-align: center;
 }
 
+form {
+  position: relative;
+  padding: 0 1em;
+}
+
+button {
+  display: block;
+  padding: 1em;
+  font-size: 0.8em;
+  background-color: #ffffff;
+  border: 1px solid #d2d2d2;
+  border-radius: 1em;
+}
+
+.bt-progressbar-container {
+  width: 100%;
+  height: fit-content;
+  border: 1px solid #2d2d2d;
+  border-left: none;
+  border-right: none;
+  box-sizing: border-box;
+}
+
+.bt-progressbar {
+  height: 10px;
+  background-color: #1bc712;
+  animation: progressbar-stage-1 1s ease-in-out forwards;
+}
+
+.bt-progressbar-2 {
+  height: 10px;
+  background-color: #1bc712;
+  animation: progressbar-stage-2 1s ease-in-out forwards;
+}
+
+.bt-progressbar-3 {
+  height: 10px;
+  background-color: #1bc712;
+  animation: progressbar-stage-3 1s ease-in-out forwards;
+}
+
 #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 {
   display: block;
   margin: auto;
   width: auto;
-  height: 15em;
+  height: 17em;
 }
 
 #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
@@ -152,29 +189,54 @@ label {
   fill: #ffffff;
 }
 
-button {
-  display: block;
+.bt-color-submit-button {
   margin: 2em auto;
-  padding: 1em;
-  font-size: 0.8em;
-  background-color: #ffffff;
-  border: 1px solid #d2d2d2;
-  border-radius: 1em;
 }
 
 /* ---------- TEXT ---------- */
 
 input[type='text'] {
   display: block;
-  margin: 0 auto;
-  padding-left: 1em;
-  width: 100%;
+  position: absolute;
+  top: 14em;
+  left: 6.35em;
   height: 50px;
   font-size: 1em;
-  border: 1px solid #ededed;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   box-sizing: border-box;
+  text-align: center;
 }
 
-input[type='text']:focus {
-  outline: none;
+input[type='text']::placeholder {
+  color: #2d2d2d;
+}
+
+.bt-text-submit-button {
+  margin: 0 auto 5em auto;
+}
+
+/* ---------- TEXT ---------- */
+
+.bt-final-text {
+  position: absolute;
+  top: 23em;
+  left: 10.8em;
+}
+
+/* ---------- KEYFRAMES ---------- */
+
+@keyframes progressbar-stage-1 {
+  from {width: 0%;}
+  to {width: 33%;}
+}
+
+@keyframes progressbar-stage-2 {
+  from {width: 33%;}
+  to {width: 66%;}
+}
+
+@keyframes progressbar-stage-3 {
+  from {width: 66%;}
+  to {width: 100%;}
 }
