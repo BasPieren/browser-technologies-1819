@@ -63,7 +63,8 @@ Here I explain some of the core features of this project:
 
 ### Honourable Mentions
 
-* None!
+* [Jesse Dijkman](https://github.com/jesseDijkman1)
+* [Robin Stut](https://github.com/robinstut)
 
 ## Licence 🔓
 MIT © [Bas Pieren](https://github.com/BasPieren)
