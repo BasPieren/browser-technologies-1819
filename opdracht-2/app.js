@@ -2,6 +2,7 @@
 
 const express = require('express'),
       compression = require('compression'),
+      fs = require('fs'),
       app = express(),
       port = 3000
 
