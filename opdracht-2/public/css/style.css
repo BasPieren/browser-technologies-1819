@@ -37,31 +37,37 @@ a {
 main {
   display: flex;
   flex-direction: column;
-  padding: 2em 1em;
   height: 100vh;
   box-sizing: border-box;
 }
 
 main > header {
   margin: 0 0 auto 0;
+  padding: 2em 1em 0 1em;
   text-align: center;
 }
 
-main > header > p{
+main > header > p {
   margin: 1em 0 0 0;
+}
+
+main > form {
+  padding: 0 1em;
 }
 
 main > footer {
   display: flex;
   justify-content: space-between;
   margin: auto 0 0 0;
+  padding: 0 1em 2em 1em;
   text-align: center;
 }
 
 #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 {
   display: block;
-  margin: auto auto 0 auto;
-  max-width: 240px;
+  margin: auto;
+  width: auto;
+  height: 15em;
 }
 
 #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
@@ -72,52 +78,78 @@ main > footer {
 
 /* ---------- COLOR ---------- */
 
-main > div {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: auto 0 0 0;
-}
-
 label {
   display: inline-block;
   margin: 0 auto;
   width: 39.3px;
   height: 39.3px;
-  background-color: magenta;
   cursor: pointer;
+  box-sizing: border-box;
+}
+
+.bt-red-label {
+  background-color: #e62222;
+}
+
+.bt-blue-label {
+  background-color: #2863e6;
+}
+
+.bt-yellow-label {
+  background-color: #fbdd3e;
+}
+
+.bt-green-label {
+  background-color: #1bc712;
+}
+
+.bt-purple-label {
+  background-color: #9c1af6;
+}
+
+.bt-orange-label {
+  background-color: #ffb000;
+}
+
+.bt-black-label {
+  background-color: #000000;
+}
+
+.bt-white-label {
+  background-color: #ffffff;
+  border: 1px solid #2d2d2d;
 }
 
 #rood:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
-  fill: red;
+  fill: #e62222;
 }
 
 #blauw:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
-  fill: blue;
+  fill: #2863e6;
 }
 
 #geel:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
-  fill: yellow;
+  fill: #fbdd3e;
 }
 
 #groen:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
-  fill: green;
+  fill: #1bc712;
 }
 
 #paars:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
-  fill: purple;
+  fill: #9c1af6;
 }
 
 #oranje:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
-  fill: orange;
+  fill: #ffb000;
 }
 
 #zwart:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
-  fill: black;
+  fill: #000000;
 }
 
 #wit:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
-  fill: white;
+  fill: #ffffff;
 }
 
 button {
