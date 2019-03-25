@@ -51,21 +51,17 @@ main > header > p{
   margin: 1em 0 0 0;
 }
 
-main > svg {
-  margin: 0 auto;
-  max-height: 40%;
-  width: auto;
-}
-
-main > form {
-  margin: auto 0 0 0;
-}
-
 main > footer {
   display: flex;
   justify-content: space-between;
   margin: auto 0 0 0;
   text-align: center;
+}
+
+#ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 {
+  display: block;
+  margin: auto auto 0 auto;
+  max-width: 240px;
 }
 
 #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
@@ -84,8 +80,10 @@ main > div {
 }
 
 label {
-  width: 25px;
-  height: 25px;
+  display: inline-block;
+  margin: 0 auto;
+  width: 39.3px;
+  height: 39.3px;
   background-color: magenta;
   cursor: pointer;
 }
@@ -120,6 +118,16 @@ label {
 
 #wit:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
   fill: white;
+}
+
+button {
+  display: block;
+  margin: 2em auto;
+  padding: 1em;
+  font-size: 0.8em;
+  background-color: #ffffff;
+  border: 1px solid #d2d2d2;
+  border-radius: 1em;
 }
 
 /* ---------- TEXT ---------- */
