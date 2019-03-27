@@ -66,10 +66,10 @@ When I had the finished the basic HTML structure and CSS styling I decided to te
 ![Green](https://i.imgur.com/ZhEb5QX.png)
 My primary green color didn't score to well in the test. Because the color would be both a heading and interface element I made it darker so it would get at least a score of 3.
 
-[Yellow](https://i.imgur.com/sfXGHIF.png)
+![Yellow](https://i.imgur.com/sfXGHIF.png)
 Yellow also didn't score to good but this is an interesting case.
 
-[Orange](https://i.imgur.com/n0PLfE2.png)
+![Orange](https://i.imgur.com/n0PLfE2.png)
 And the same goes for orange. So here I also darkend the color.
 
 ### Screenreader
