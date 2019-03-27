@@ -5,7 +5,7 @@ const express = require('express'),
       fs = require('fs'),
       bodyParser = require('body-parser'),
       app = express(),
-      port = 3000
+      port = 4000
 
 app
   .set('view engine', 'ejs')
@@ -39,7 +39,7 @@ function textPage(req, res) {
 }
 
 function printPage(req, res) {
-  const text = req.body.text;
+  const shirtProps = req.body;
 
-  res.render('pages/print.ejs', {text: text})
+  res.render('pages/print.ejs', {tshirt: shirtProps})
 }
