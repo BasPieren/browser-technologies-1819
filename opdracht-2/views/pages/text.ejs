@@ -12,7 +12,8 @@
   </header>
 
   <form method="post" action="/print">
-    <input type="text" placeholder="Kies een tekst..." name="text">
+    <input type="hidden" name="color" value="<%= color %>">
+    <input type="text" name="text" placeholder="Kies een tekst...">
 
     <button type="submit" class="bt-text-submit-button">Bevestig</button>
 
