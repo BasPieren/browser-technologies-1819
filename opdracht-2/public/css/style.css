@@ -23,7 +23,7 @@ h2 {
 }
 
 h2 > span {
-  color: #1bc712;
+  color: #03AD00;
 }
 
 a {
@@ -34,7 +34,7 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #1bc712;
+  background-color: #03AD00;
   border-radius: 1em;
 }
 
@@ -43,7 +43,6 @@ main {
   flex-direction: column;
   height: 100vh;
   box-sizing: border-box;
-  animation: main-opacity-transition-in 1s ease-in-out forwards;
 }
 
 header {
@@ -89,19 +88,19 @@ button {
 
 .bt-progressbar {
   height: 10px;
-  background-color: #1bc712;
+  background-color: #03AD00;
   animation: progressbar-stage-1 1s ease-in-out forwards;
 }
 
 .bt-progressbar-2 {
   height: 10px;
-  background-color: #1bc712;
+  background-color: #03AD00;
   animation: progressbar-stage-2 1s ease-in-out forwards;
 }
 
 .bt-progressbar-3 {
   height: 10px;
-  background-color: #1bc712;
+  background-color: #03AD00;
   animation: progressbar-stage-3 1s ease-in-out forwards;
 }
 
@@ -133,33 +132,97 @@ label {
   background-color: #e62222;
 }
 
+.bt-red-label::after {
+  position: absolute;
+  top: 4.2em;
+  content: 'Rood';
+  font-size: 0.6em;
+  font-weight: 600;
+}
+
 .bt-blue-label {
   background-color: #2863e6;
+}
+
+.bt-blue-label::after {
+  position: absolute;
+  top: 4.2em;
+  content: 'Blauw';
+  font-size: 0.6em;
+  font-weight: 600;
 }
 
 .bt-yellow-label {
   background-color: #fbdd3e;
 }
 
+.bt-yellow-label::after {
+  position: absolute;
+  top: 4.2em;
+  content: 'Geel';
+  font-size: 0.6em;
+  font-weight: 600;
+}
+
 .bt-green-label {
-  background-color: #1bc712;
+  background-color: #03AD00;
+}
+
+.bt-green-label::after {
+  position: absolute;
+  top: 4.2em;
+  content: 'Groen';
+  font-size: 0.6em;
+  font-weight: 600;
 }
 
 .bt-purple-label {
   background-color: #9c1af6;
 }
 
+.bt-purple-label::after {
+  position: absolute;
+  top: 4.2em;
+  content: 'Paars';
+  font-size: 0.6em;
+  font-weight: 600;
+}
+
 .bt-orange-label {
-  background-color: #ffb000;
+  background-color: #FD6300;
+}
+
+.bt-orange-label::after {
+  position: absolute;
+  top: 4.2em;
+  content: 'Oranje';
+  font-size: 0.6em;
+  font-weight: 600;
 }
 
 .bt-black-label {
   background-color: #000000;
 }
 
+.bt-black-label::after {
+  position: absolute;
+  top: 4.2em;
+  content: 'Zwart';
+  font-size: 0.6em;
+  font-weight: 600;
+}
+
 .bt-white-label {
   background-color: #ffffff;
   border: 1px solid #2d2d2d;
+}
+
+.bt-white-label::after {
+  position: absolute;
+  top: 4.2em;
+  content: 'Wit';
+  font-size: 0.6em;
+  font-weight: 600;
 }
 
 #rood:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
@@ -175,7 +238,7 @@ label {
 }
 
 #groen:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
-  fill: #1bc712;
+  fill: #03AD00;
 }
 
 #paars:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
@@ -183,7 +246,7 @@ label {
 }
 
 #oranje:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
-  fill: #ffb000;
+  fill: #FD6300;
 }
 
 #zwart:checked ~ #ed4d6896-32aa-47cc-ab9f-d6e2f2f6c5a3 path {
@@ -231,16 +294,6 @@ input[type='text']::placeholder {
 }
 
 /* ---------- KEYFRAMES ---------- */
-
-@keyframes main-opacity-transition-in {
-  from {opacity: 0;}
-  to {opacity: 100;}
-}
-
-@keyframes main-opacity-transition-out {
-  from {opacity: 100;}
-  to {opacity: 0;}
-}
 
 @keyframes progressbar-stage-1 {
   from {width: 0%;}
