@@ -21,12 +21,14 @@
   }
 
   function getLocalStorageData() {
-    const svg = document.getElementsByClassName('fff611fd-d11e-429f-bd57-f749dd6baa13')
+    const svg = document.getElementsByClassName('fff611fd-d11e-429f-bd57-f749dd6baa13'),
+          input = document.getElementById('bt-text')
 
     let color = localStorage.getItem('color'),
         text = localStorage.getItem('text')
 
-    svg[0].style.fill = JSON.parse(color);
+    svg[0].style.fill = JSON.parse(color)
+    input.value = JSON.parse(text)
   }
 
   getLocalStorageData()
