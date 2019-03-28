@@ -5,7 +5,7 @@ const express = require('express'),
       fs = require('fs'),
       bodyParser = require('body-parser'),
       app = express(),
-      port = 4000
+      port = 3000
 
 app
   .set('view engine', 'ejs')
