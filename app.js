@@ -22,7 +22,7 @@ app
   .post('/print', printPage)
   .post('/text', textPage)
 
-  .listen(port, () => console.log(`Example app listening on port ${port}!`))
+  .listen(process.env.PORT || port)
 
 function homePage(req, res) {
   res.render('pages/index.ejs')
