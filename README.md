@@ -24,9 +24,9 @@ This is a list of things I want to do in this project:
 
 - [X] Add HTML layer.
 - [X] Add CSS Layer.
-- [ ] Add Javascript layer.
+- [X] Add Javascript layer.
 - [X] Test contrast and color.
-- [ ] Test screenreader.
+- [X] Test screenreader.
 - [ ] Add feature detection.
 
 ## Description 📝
