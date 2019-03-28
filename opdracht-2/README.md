@@ -61,13 +61,13 @@ Here I explain the research I did for this project.
 ### Functional, Usable & Pleasurable
 
 ### Color & Contrast
-When I had the finished the basic HTML structure and CSS styling I decided to test the colors I had choosen on their contrast ratings:
+When I had the finished the basic HTML structure and CSS styling I decided to test the colors I had choosen on their contrast ratings using [Color.review](https://color.review). Color.review gives colors a score based on the foreground and background color. Headlines need a score of at least 3 and text needs a score of at least 4.5. Interface elements like buttons need an score of at least 3.
 
 ![Green](https://i.imgur.com/ZhEb5QX.png)
-My primary green color didn't score to well in the test. Because the color would be both a heading and interface element I made it darker so it would get at least a score of 3.
+My primary green color didn't score to well in the test. Because the color would be both a headline and interface element I made it darker so it would get at least a score of 3.
 
 ![Yellow](https://i.imgur.com/sfXGHIF.png)
-Yellow also didn't score to good but this is an interesting case.
+Yellow also didn't score to good but this is an interesting case. Because here we are talking about a color that is used for the t-shirt its self and not for a text or interface element. I decided to not darken the color because then it wouldn't be yellow anymore. To compensate for this I added labels to the color selections.
 
 ![Orange](https://i.imgur.com/n0PLfE2.png)
 And the same goes for orange. So here I also darkend the color.
