@@ -61,7 +61,7 @@ Here I explain the research I did for this project.
 I started off by drawing a simple lo-fi wireframe which showcases the basic functionality.
 
 ![Wireflow](https://i.imgur.com/r59AKXu.jpg?1)
-> A lo-fi wireflow
+> *A lo-fi wireflow*
 
 ### Functional, Usable & Pleasurable
 Then I wrote down the functional/reliable, usable and pleasurable layers of the web app.
