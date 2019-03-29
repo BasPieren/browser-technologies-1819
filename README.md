@@ -58,24 +58,25 @@ This project makes use of the following packages and technologies:
 Here I explain the research I did for this project.
 
 ### Wireflow
+I started off by drawing a simple lo-fi wireframe which showcases the basic functionality.
 
 ![Wireflow](https://i.imgur.com/r59AKXu.jpg?1)
 > A lo-fi wireflow
 
 ### Functional, Usable & Pleasurable
-Here I explain the functional/reliable, usable and pleasurable layers of the web app.
+Then I wrote down the functional/reliable, usable and pleasurable layers of the web app.
 
-__Functional/Reliable:__ For the app to functional/reliable the user needs to be able to use the most basic functionality of the web app. In this case that is to be able to choose the color and text of the t-shirt.
+  * __Functional/Reliable:__ For the app to be functional/reliable we start with HTML/EJS. The user needs to be able to use the most basic functionality of the web app. In this case the user needs to be able to choose the color and text of the t-shirt.
 
-__Usable:__
+  * __Useable:__ For the app to be useable we start adding CSS which improves the UX and and makes the UI overall prettier to look at.
 
-__Pleasurable:__ For the app to be pleasurable their need to be "quality of life" changes like animations and user feedback like a progressbar.
+  * __Pleasurable:__ For the app to be pleasurable we start adding Javascript. Now we can start at looking into adding "quality of life" changes like animations and user feedback like a progressbar.
 
 ### Color and Contrast
-When I had the finished the basic HTML structure and CSS styling I decided to test the colors I had choosen on their contrast ratings using [Color.review](https://color.review). Color.review gives colors a score based on the foreground and background color. Headlines need a score of at least 3 and text needs a score of at least 4.5. Interface elements like buttons need an score of at least 3.
+When I had the finished the basic HTML/EJS structure and CSS styling I decided to test the colors I had choosen on their contrast ratings using [Color.review](https://color.review). Color.review gives colors a score based on the foreground and background color. Headlines need a score of at least 3 and text needs a score of at least 4.5. Interface elements like buttons need an score of at least 3.
 
 ![Green](https://i.imgur.com/ZhEb5QX.png)
-My primary green color didn't score to well in the test. Because the color would be both a headline and interface element I made it darker so it would get at least a score of 3.
+My primary green color didn't score to well in the test. Because the color would be both a headline and interface element I made it darker so it would get a score of at least 3.
 
 ![Yellow](https://i.imgur.com/sfXGHIF.png)
 Yellow also didn't score to good but this is an interesting case. Because here we are talking about a color that is used for the t-shirt its self and not for a text or interface element. I decided to not darken the color because then it wouldn't be yellow anymore. To compensate for this I added labels to the color selections.
@@ -84,7 +85,7 @@ Yellow also didn't score to good but this is an interesting case. Because here w
 And the same goes for orange. So here I also darkend the color.
 
 ### Screenreader
-I also tested my application with the build in mac VoiceOver screenreader. Navigation using the keyboard works good. The only problem is that the user can't select a color for their t-shirt.
+I also tested my application with the build in mac VoiceOver screenreader to test if you would be able to navigate through the app using you keyboard. And as it turns out navigation using the keyboard works good. You can get to every element and navigate to the next page. The only problem is that the user can't select a color for their t-shirt.
 
 ## How It Works 🛠️
 Here I explain some of the core features of this project:
